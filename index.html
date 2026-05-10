@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor - The AI-first Code Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Inter to closely match Cursor's clean sans-serif typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+        <a href="/" class="logo">
+          <img class="brand-logo">
+        </a>
+            <nav class="nav-links">
+                <a href="#">Product <span class="chevron">↓</span></a>
+                <a href="#">Enterprise</a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources <span class="chevron">↓</span></a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="nav-link">Sign in</a>
+                <a href="#" class="btn btn-ghost">Contact sales</a>
+                <a href="#" class="btn btn-primary">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</h1>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary btn-large">Download for Windows <span class="icon">⤓</span></a>
+                <a href="#" class="btn btn-ghost btn-large">Request a demo <span class="icon">→</span></a>
+            </div>
+
+            <!-- Hero IDE Mockup -->
+            <div class="hero-mockup">
+                <div class="mockup-header">
+                    <div class="window-controls"><span></span><span></span><span></span></div>
+                    <div class="mockup-title">Cursor</div>
+                </div>
+                <div class="mockup-body">
+                    <div class="mockup-sidebar">
+                        <div class="sidebar-title">EXPLORER</div>
+                        <ul>
+                            <li>app</li>
+                            <li>components</li>
+                            <li>lib</li>
+                            <li class="active">page.tsx</li>
+                            <li>globals.css</li>
+                        </ul>
+                    </div>
+                    <div class="mockup-editor">
+                        <div class="code-line"><span class="keyword">import</span> { useState } <span class="keyword">from</span> <span class="string">'react'</span>;</div>
+                        <div class="code-line"><span class="keyword">import</span> { Dashboard } <span class="keyword">from</span> <span class="string">'@/components'</span>;</div>
+                        <div class="code-line"><br></div>
+                        <div class="code-line"><span class="keyword">export default function</span> <span class="function">Page</span>() {</div>
+                        <div class="code-line">  <span class="keyword">return</span> (</div>
+                        <div class="code-line">    <span class="tag">&lt;main</span> <span class="attr">className</span>=<span class="string">"flex min-h-screen"</span><span class="tag">&gt;</span></div>
+                        <div class="code-line">      <span class="tag">&lt;Dashboard /&gt;</span></div>
+                        <div class="code-line">    <span class="tag">&lt;/main&gt;</span></div>
+                        <div class="code-line">  );</div>
+                        <div class="code-line">}</div>
+                    </div>
+                    <div class="mockup-chat">
+                        <div class="chat-msg user-msg">make a landing page based on attached docs explaining what we do</div>
+                        <div class="chat-meta">Read about-acme.md</div>
+                        <div class="chat-msg ai-msg">I'll create a minimal, serif-based landing page that matches your brand voice.</div>
+                        <div class="chat-file">app/page.tsx <span class="add">+52</span></div>
+                        <div class="chat-file">app/globals.css <span class="add">+18</span></div>
+                        <div class="chat-msg ai-msg">Done. Fonts preload in the head, critical CSS is inlined, and I added a color-scheme meta tag so dark mode renders instantly.</div>
+                        <div class="chat-input-box">Plan, search, build anything...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Logos -->
+    <section class="trusted-by">
+        <div class="container">
+            <p>Trusted every day by teams that build world-class software</p>
+            <div class="logos">
+                <span>stripe</span>
+                <span>OpenAI</span>
+                <span>Linear</span>
+                <span>Perplexity</span>
+                <span>Figma</span>
+                <span>Rippling</span>
+                <span>Adobe</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Sections -->
+    <!-- Feature 1 -->
+    <section class="feature-section">
+        <div class="container feature-grid">
+            <div class="feature-content">
+                <h2>Agents turn ideas into code</h2>
+                <p>Accelerate development by handing off tasks to Cursor, while you focus on making decisions.</p>
+                <a href="#" class="feature-link">Learn about agentic development →</a>
+            </div>
+            <div class="feature-visual gray-bg">
+                <div class="mini-mockup agent-list">
+                    <div class="mockup-header"><div class="window-controls"><span></span><span></span><span></span></div> cursor.com/agent</div>
+                    <div class="agent-group">This Week</div>
+                    <div class="agent-item"><span class="dot active"></span> Acme Research Dashboard</div>
+                    <div class="agent-item"><span class="dot active"></span> Live Telemetry Pipeline</div>
+                    <div class="agent-item"><span class="dot pending"></span> Zero-Downtime Deploys</div>
+                    <div class="agent-group">This Month</div>
+                    <div class="agent-item"><span class="dot done"></span> Binary Protocol Parser</div>
+                    <div class="agent-item"><span class="dot done"></span> Edge Cache Invalidation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2 (Reversed) -->
+    <section class="feature-section">
+        <div class="container feature-grid reversed">
+            <div class="feature-content">
+                <h2>Works autonomously, runs in parallel</h2>
+                <p>Agents use their own computers to build, test, and demo features end to end for you to review.</p>
+                <a href="#" class="feature-link">Learn about cloud agents →</a>
+            </div>
+            <div class="feature-visual gray-bg">
+                <div class="mini-mockup chat-view">
+                    <div class="mockup-header"><div class="window-controls"><span></span><span></span><span></span></div> cursor-agent</div>
+                    <div class="chat-msg user-msg">let's build a mission control interface, similar to the expose-style window manager on macOS</div>
+                    <div class="chat-meta">Thought 4s</div>
+                    <div class="chat-meta">Read AppManager.tsx</div>
+                    <div class="chat-file">feature-prd.md <span class="add">+68</span></div>
+                    <div class="chat-msg ai-msg">Drafted implementation steps in feature-prd.md. A few quick questions before I start building...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3 -->
+    <section class="feature-section">
+        <div class="container feature-grid">
+            <div class="feature-content">
+                <h2>In every tool, at every step</h2>
+                <p>Cursor runs in your terminal, collaborates in Slack, and reviews PRs in GitHub.</p>
+                <div class="terminal-tabs">
+                    <span class="active">PowerShell</span>
+                    <span>Linux / WSL</span>
+                </div>
+                <div class="code-block">
+                    <code><span class="cmd">irm</span> 'https://cursor.com/install?win32=true' | <span class="cmd">iex</span></code>
+                </div>
+            </div>
+            <div class="feature-visual gray-bg flex-center">
+                <div class="slack-mockup">
+                    <div class="slack-header">#feature-realtime-sync</div>
+                    <div class="slack-body">
+                        <div class="slack-msg">
+                            <strong>swhitmore</strong> <span class="time">5m</span>
+                            <p>i wanna be able to go to cursor.com/changelog#1.0</p>
+                        </div>
+                        <div class="slack-msg">
+                            <strong>eric</strong> <span class="time">4m</span>
+                            <p>checks out <span class="mention">@cursor</span> can you take a stab?</p>
+                        </div>
+                        <div class="slack-msg ai-response">
+                            <strong>Cursor <span class="app-tag">APP</span></strong> <span class="time">2m</span>
+                            <p>I added direct linking for changelog entries and updated the Node.js version constraints across the project for better maintainability.</p>
+                            <div class="slack-actions">
+                                <button class="btn-primary">View PR</button>
+                                <button class="btn-ghost">Open in Cursor</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 4 (Reversed) -->
+    <section class="feature-section">
+        <div class="container feature-grid reversed">
+            <div class="feature-content">
+                <h2>Magically accurate autocomplete</h2>
+                <p>Our specialized Tab model predicts your next action with striking speed and precision.</p>
+                <a href="#" class="feature-link">Learn about Tab →</a>
+            </div>
+            <div class="feature-visual dark-bg">
+                <div class="code-autocomplete">
+                    <div class="code-line"><span class="keyword">def</span> <span class="function">rolling_focus_share</span>(</div>
+                    <div class="code-line">  events: pd.DataFrame,</div>
+                    <div class="code-line">  ts_col: <span class="keyword">str</span> = <span class="string">"timestamp"</span>,</div>
+                    <div class="code-line">) -&gt; pd.DataFrame:</div>
+                    <div class="code-line ghost-text">  if events.empty:</div>
+                    <div class="code-line ghost-text">    return pd.DataFrame()</div>
+                    <div class="code-line ghost-text">  df = events.copy()</div>
+                    <div class="autocomplete-tooltip"><span class="tag">Tab</span> to accept</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">The new way to build software.</h2>
+            <div class="testimonials-grid">
+                <div class="test-card">
+                    <p>“It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.”</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <strong>Diana Hu</strong>
+                            <span>General Partner, Y Combinator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>“My favorite enterprise AI service is Cursor. Every one of our engineers, some 40,000, are now assisted by AI and our productivity has gone up incredibly.”</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <strong>Jensen Huang</strong>
+                            <span>President & CEO, NVIDIA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>“The best LLM applications have an autonomy slider: you control how much independence to give the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or you can let it rip with the full autonomy agentic version.”</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <strong>Andrej Karpathy</strong>
+                            <span>CEO, Eureka Labs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>“Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees. We spend more on R&D and software creation than any other undertaking, and there's significant economic outcomes when making that process more efficient.”</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <strong>Patrick Collison</strong>
+                            <span>Co‑Founder & CEO, Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>“The most useful AI tool that I currently pay for, hands down, is Cursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts... everything is well put together.”</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <strong>shadcn</strong>
+                            <span>Creator of shadcn/ui</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <p>“It's definitely becoming more fun to be a programmer. We are at the 1% of what's possible, and it's in interactive experiences like Cursor where models like GPT-5 shine brightest.”</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <strong>Greg Brockman</strong>
+                            <span>President, OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay on the frontier Section -->
+    <section class="frontier">
+        <div class="container">
+            <h2 class="section-title left-align">Stay on the frontier</h2>
+            <div class="frontier-grid">
+                <!-- Card 1 -->
+                <div class="frontier-card">
+                    <div class="card-info">
+                        <h3>Use the best model for every task</h3>
+                        <p>Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor.</p>
+                        <a href="#" class="feature-link mt-auto">Explore models ↗</a>
+                    </div>
+                    <div class="card-visual">
+                        <div class="ui-panel">
+                            <div class="ui-title">Ask Cursor to plan or build anything</div>
+                            <ul class="model-list">
+                                <li><span class="icon"></span> Auto <span class="badge">Suggested ✓</span></li>
+                                <li class="divider"></li>
+                                <li class="active"><span class="icon dot"></span> Composer 2</li>
+                                <li><span class="icon"></span> GPT-5.5</li>
+                                <li><span class="icon"></span> Opus 4.7</li>
+                                <li><span class="icon"></span> Gemini 3.1 Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="frontier-card">
+                    <div class="card-info">
+                        <h3>Complete codebase understanding</h3>
+                        <p>Cursor learns how your codebase works, no matter the scale or complexity.</p>
+                        <a href="#" class="feature-link mt-auto">Learn about codebase indexing ↗</a>
+                    </div>
+                    <div class="card-visual">
+                        <div class="ui-panel dark">
+                            <div class="search-item">Where are these menu label colors defined? <span class="tag">Grepped</span></div>
+                            <div class="search-item">Choose a model <span class="tag">Searched</span></div>
+                            <div class="search-item">Where is the model picker UI implemented? <span class="tag">Searched</span></div>
+                            <div class="search-item">How are model labels colored in the UI? <span class="tag shimmer">Reading</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="frontier-card">
+                    <div class="card-info">
+                        <h3>Develop enduring software</h3>
+                        <p>Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.</p>
+                        <a href="#" class="feature-link mt-auto">Explore enterprise →</a>
+                    </div>
+                    <div class="card-visual bg-image">
+                        <!-- Abstract team image mock -->
+                        <div class="enterprise-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog & Team Section -->
+    <section class="changelog-team">
+        <div class="container grid-2">
+            <div class="changelog">
+                <h3 class="section-label">Changelog</h3>
+                <div class="changelog-list">
+                    <div class="cl-item">
+                        <div class="cl-meta"><span class="tag">3.3</span> <span class="date">May 7, 2026</span></div>
+                        <p>PR Review, Build Plan in Parallel, and Split PRs</p>
+                    </div>
+                    <div class="cl-item">
+                        <div class="cl-meta"><span class="tag">3.3</span> <span class="date">May 6, 2026</span></div>
+                        <p>Context Usage Breakdown</p>
+                    </div>
+                    <div class="cl-item">
+                        <div class="cl-meta"><span class="date">May 4, 2026</span></div>
+                        <p>Model controls, spend management, and usage analytics</p>
+                    </div>
+                    <div class="cl-item">
+                        <div class="cl-meta"><span class="date">May 1, 2026</span></div>
+                        <p>Team Marketplace Updates</p>
+                    </div>
+                </div>
+                <a href="#" class="feature-link mt-auto">See what's new in Cursor →</a>
+            </div>
+            <div class="team">
+                <div class="team-image"></div>
+                <h3>Cursor is an applied research team focused on building the future of software development.</h3>
+                <a href="#" class="feature-link">Join us →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title left-align">Recent highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="meta">Mar 27, 2026 · Research</div>
+                    <h3>A technical report on Composer 2</h3>
+                    <div class="author">Sasha Rush · 3 min read</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="meta">Apr 2, 2026 · Product</div>
+                    <h3>Meet the new Cursor</h3>
+                    <div class="author">Michael & Sualeh · 10 min read</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="meta">Mar 19, 2026 · Research</div>
+                    <h3>Introducing Composer 2</h3>
+                    <div class="author">Cursor Team · 3 min read</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="meta">Mar 11, 2026 · Research</div>
+                    <h3>How we compare model quality in Cursor</h3>
+                    <div class="author">Naman Jain · 7 min read</div>
+                </div>
+            </div>
+            <a href="#" class="feature-link mt-4 inline-block">View all blog posts →</a>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Try Cursor now.</h2>
+            <div class="hero-actions justify-center">
+                <a href="#" class="btn btn-primary btn-large">Download for Windows <span class="icon">⤓</span></a>
+                <a href="#" class="btn btn-ghost btn-large">Talk to the team <span class="icon">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#">Agents</a>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Code Review</a>
+                    <a href="#">Tab</a>
+                    <a href="#">CLI</a>
+                    <a href="#">Cloud Agents</a>
+                    <a href="#">Marketplace ↗</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Download</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Learn ↗</a>
+                    <a href="#">Forum ↗</a>
+                    <a href="#">Help ↗</a>
+                    <a href="#">Workshops</a>
+                    <a href="#">Status ↗</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Students</a>
+                    <a href="#">Brand</a>
+                    <a href="#">Future</a>
+                    <a href="#">Anysphere ↗</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Data Use</a>
+                    <a href="#">Security</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="#">X ↗</a>
+                    <a href="#">LinkedIn ↗</a>
+                    <a href="#">YouTube ↗</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <span>© 2026 Anysphere, Inc.</span>
+                    <span>🛡 <a href="#">SOC 2 Certified</a></span>
+                </div>
+                <div class="footer-right">
+                    <div class="theme-toggles">
+                        <button class="active">🖥</button>
+                        <button>☉</button>
+                        <button>☾</button>
+                    </div>
+                    <div class="lang-selector">
+                        🌐 English ↓
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
