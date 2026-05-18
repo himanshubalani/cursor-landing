@@ -13,6 +13,10 @@ This project is a static landing page closely modeled after the [Cursor](https:/
 **Note:**
 > I received a takedown request, so I cannot deploy this website publicly. Instead, a video walkthrough of the final output is provided below.
 
+
+https://github.com/user-attachments/assets/189d6ecd-966d-41bf-9073-b4edcf578f05
+
+
 ---
 
 ## Sections Implemented
@@ -48,10 +52,10 @@ This project is a static landing page closely modeled after the [Cursor](https:/
   - [Inter](https://fonts.google.com/specimen/Inter) (for body and UI text)
   - [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (for code snippets)
 - **Colors:**
-  - Dark backgrounds: #18181B, #23272F
-  - Accent: #6366F1, #7C3AED
-  - Text: #FFFFFF, #A1A1AA, #18181B
-  - Grays: #F4F4F5, #E4E4E7, #D4D4D8
+  - Dark backgrounds: `#18181B`, `#23272F`
+  - Accent: `#6366F1`, `#7C3AED`
+  - Text: `#FFFFF`F, `#A1A1AA`, `#18181B`
+  - Grays: `#F4F4F5`, `#E4E4E7`, `#D4D4D8`
 
 All colors and font weights were chosen to closely match the Cursor brand and reference site.
 
